@@ -1,5 +1,5 @@
 -- A Magical Database for Your Dream Online Bookstore Adventure!
-CREATE DATABASE alx_book_store;
+CREATE DATABASE alx_book_store IF NOT EXISTS;
 USE alx_book_store;
 
 -- Books: Stores information about books available in the bookstore.
