@@ -35,7 +35,7 @@ CREATE TABLE Orders (
 -- Order_Details: Stores information about the books included in each order.
 CREATE TABLE Order_Details (
     order_detail_id INT AUTO_INCREMENT PRIMARY KEY,
-    order_id INT FOREIGN KEY REFERENCES Orders(order_id),
-    book_id INT FOREIGN KEY REFERENCES Books(book_id),
+    order_id INT FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+    book_id INT FOREIGN KEY (book_id) REFERENCES Books(book_id),
     quantity DOUBLE,
 );
