@@ -19,3 +19,5 @@ try:
 except mysql.connector.Error as e:
     print(f"Error creating database: {e}")
 
+my_cursor.close()
+my_db.close()
