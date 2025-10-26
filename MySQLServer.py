@@ -1,6 +1,5 @@
 # Let's Build Your Database: Your Gateway to Data Adventure!
 import mysql.connector
-from mysql.connector import Error
 import os
 
 db_user = os.environ.get("DB_USER")
