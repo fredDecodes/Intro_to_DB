@@ -1,4 +1,7 @@
 -- Full description - describe the table books without using DESCRIBE OR EXPLAIN commands
+-- use database alx_book_store;
+USE alx_book_store;
+
 SELECT
 	COLUMN_NAME,
 	COLUMN_TYPE,
@@ -10,6 +13,4 @@ SELECT
 	COLUMN_KEY,
 	EXTRA
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA = DATABASE("alx_book_store")
-	AND TABLE_NAME = 'books'
-ORDER BY ORDINAL_POSITION;
+WHERE TABLE_NAME = 'books';
